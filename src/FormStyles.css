@@ -1,0 +1,117 @@
+.form-container {
+    margin-top: 20px;
+    padding: 30px; /* Más espacio interno */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes más redondeados */
+    background-color: #fff; /* Fondo blanco */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .form-container h2 {
+    margin-bottom: 30px; /* Más espacio debajo del título */
+    text-align: center;
+    color: #333;
+    font-size: 2rem; /* Título más grande */
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Más espacio entre los grupos de campos */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Más espacio debajo de la etiqueta */
+    color: #555;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group input[type="email"],
+  .form-group select {
+    width: calc(100% - 20px); /* Ajustar ancho para el padding */
+    padding: 12px; /* Más padding en los inputs */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bordes más redondeados */
+    font-size: 1rem;
+  }
+  
+  .form-actions {
+    margin-top: 30px;
+    text-align: right;
+  }
+  
+  .form-actions button {
+    padding: 12px 25px; /* Más padding en los botones */
+    border: none;
+    border-radius: 6px; /* Bordes más redondeados */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .form-actions button.save {
+    background-color: #28a745; /* Verde para guardar */
+    color: white;
+  }
+  
+  .form-actions button.save:hover {
+    background-color: #1e7e34;
+  }
+  
+  .form-actions button.cancel {
+    background-color: #dc3545; /* Rojo para cancelar/volver */
+    color: white;
+  }
+  
+  .form-actions button.cancel:hover {
+    background-color: #c82333;
+  }
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Redondea los bordes */
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%; /* O el ancho que necesites */
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho total */
+}
+
+/* Estilo al enfocar el input */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado del navegador */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añade una sombra sutil al enfocar */
+}
+
+/* Estilos específicos para textarea (si los usas) */
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilos para labels (opcional, para mejor alineación) */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}

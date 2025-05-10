@@ -1,0 +1,59 @@
+
+.app-layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    /* align-items: center; /* Ya no centramos verticalmente el content-area aquí */
+    justify-content: flex-end; /* Alineamos el content-area a la derecha */
+    overflow: auto;
+    padding-left: 220px; /* Espacio para el menú */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.app-layout::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/login-gif.gif'); /* Reemplaza con tu ruta */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* El fondo detrás del contenido del layout */
+}
+
+
+.app-layout .content-area {
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 0 auto; /* Añadimos un margen superior y centramos horizontalmente */
+    overflow: auto;
+    margin-left: 150px; /* Añade un margen izquierdo igual al ancho del menú */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+}
+
+.app-menu {
+    background-color: #343a40;
+    color: #f8f9fa;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
