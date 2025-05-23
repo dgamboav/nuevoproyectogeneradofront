@@ -14,14 +14,14 @@ import ProcesoGrid from './components/Grids/ProcesoGrid';
 import ProcesoForm from './components/Forms/ProcesoForm';
 import AuditoriaGrid from './components/Grids/AuditoriaGrid';
 import AuditoriaForm from './components/Forms/AuditoriaForm';
-import NoconformidadGrid from './components/Grids/NoconformidadGrid';
-import NoconformidadForm from './components/Forms/NoconformidadForm';
+import NoconformidadGrid from './components/Grids/NoConformidadGrid';
+import NoconformidadForm from './components/Forms/NoConformidadForm';
 import ConformidadGrid from './components/Grids/ConformidadGrid';
 import ConformidadForm from './components/Forms/ConformidadForm';
-import AccioncorrectivaGrid from './components/Grids/AccioncorrectivaGrid';
-import AccioncorrectivaForm from './components/Forms/AccioncorrectivaForm';
-import ProcesoauditoriaGrid from './components/Grids/ProcesoauditoriaGrid';
-import ProcesoauditoriaForm from './components/Forms/ProcesoauditoriaForm';
+import AccioncorrectivaGrid from './components/Grids/AccionCorrectivaGrid';
+import AccioncorrectivaForm from './components/Forms/AccionCorrectivaForm';
+import ProcesoauditoriaGrid from './components/Grids/ProcesoAuditoriaGrid';
+import ProcesoauditoriaForm from './components/Forms/ProcesoAuditoriaForm';
 
 const App = () => {
 
