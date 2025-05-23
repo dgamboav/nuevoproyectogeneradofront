@@ -1,0 +1,66 @@
+.app-menu {
+    background-color: #343a40;
+    color: #f8f9fa;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.app-menu h2 {
+  color: #fff; /* Título en blanco */
+  margin-bottom: 20px;
+  text-align: center; /* Centrar el texto del título */
+  font-size: 1.5rem; /* Un tamaño de fuente un poco más grande */
+  font-weight: bold;
+}
+
+.app-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ocupar todo el ancho del menú para la lista */
+}
+
+.app-menu li {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  width: 100%; /* Los items de la lista ocupan todo el ancho */
+}
+
+.app-menu li:hover {
+  background-color: #495057; /* Un tono de gris más claro al pasar el ratón */
+}
+
+.app-menu li a {
+  color: #f8f9fa;
+  text-decoration: none;
+  display: block; /* Para que el enlace ocupe todo el li */
+}
+
+.app-menu li a:hover {
+  color: #fff; /* Aclarar el texto al pasar el ratón */
+}
+
+.app-menu li button {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  text-align: left; /* Alinear el texto del botón a la izquierda */
+  cursor: pointer;
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  width: 100%; /* Ocupar todo el ancho del li */
+}
+
+.app-menu li button:hover {
+  background-color: #495057;
+  color: #fff;
+}

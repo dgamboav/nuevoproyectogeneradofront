@@ -1,0 +1,17 @@
+.home-page h2 {
+    margin-bottom: 20px;
+    color: white; /* Asegúrate de que el texto sea legible sobre el fondo del Layout */
+    text-align: center; /* Centrar el título */
+}
+
+.home-page .home-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Asegúrate de que el texto sea legible */
+    text-align: center; /* Centrar el párrafo */
+}
+
+.home-page .home-content p {
+    font-size: 1.2em;
+}

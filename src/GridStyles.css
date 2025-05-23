@@ -1,0 +1,270 @@
+.grid-container {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  position: relative;
+  z-index: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Más espacio interno */
+  border-bottom: 1px solid #eee;
+}
+
+.grid-header h2 {
+  margin: 0;
+  font-size: 1.8rem; /* Título más grande */
+  color: #333;
+}
+
+.add-new-button {
+  display: inline-block;
+  padding: 10px 20px; /* Más padding */
+  border: none; /* Eliminar borde */
+  border-radius: 6px; /* Bordes más redondeados */
+  background-color: #007bff; /* Color primario */
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.add-new-button:hover {
+  background-color: #0056b3;
+}
+
+.grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grid-table th,
+.grid-table td {
+  border: 1px solid #eee;
+  padding: 12px 15px; /* Más padding en las celdas */
+  text-align: left;
+  font-size: 0.9rem; /* Tamaño de fuente un poco más pequeño */
+}
+
+.grid-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #555; /* Color de texto un poco más oscuro */
+}
+
+.grid-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.grid-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.grid-actions {
+  white-space: nowrap;
+}
+
+.grid-actions a,
+.grid-actions button {
+  margin-right: 5px;
+  padding: 8px 12px; /* Más padding en los botones de acción */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Bordes más redondeados */
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem; /* Tamaño de fuente más pequeño para las acciones */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.grid-actions a:hover,
+.grid-actions button:hover {
+  background-color: #eee;
+}
+
+.grid-actions button.delete {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.grid-actions button.delete:hover {
+  background-color: #c82333;
+}
+
+.toggle-filters-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.toggle-filters-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la paginación */
+.grid-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.grid-pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.grid-pagination button:hover:enabled {
+  background-color: #e9ecef;
+}
+
+.grid-pagination button:disabled {
+  color: #6c757d;
+  background-color: #e9ecef;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.grid-pagination select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.grid-pagination > div { /* Estilos para el contenedor del select y su label */
+  display: flex;
+  align-items: center;
+}
+
+.grid-pagination label {
+  margin-right: 5px;
+}
+
+/* Estilos para los filtros */
+.grid-filters {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.grid-filters h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.grid-filters > div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-filters label {
+  flex-basis: 120px; /* Ajusta según sea necesario */
+  text-align: left;
+}
+
+.grid-filters input[type="text"],
+.grid-filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.grid-filters button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.grid-filters button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.grid-filters button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.grid-filters button:last-of-type {
+  background-color: #6c757d;
+  color: white;
+}
+
+.grid-filters button:last-of-type:hover {
+  background-color: #5a6268;
+}
+
+.grid-filters input[type="text"],
+.grid-filters input[type="number"],
+.grid-filters input[type="date"],
+.grid-filters input[type="email"],
+.grid-filters input[type="password"],
+.grid-filters select,
+.grid-filters textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Redondea los bordes */
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%; /* O el ancho que necesites */
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho total */
+}
+
+/* Estilo al enfocar el input */
+.grid-filters input:focus,
+.grid-filters select:focus,
+.grid-filters textarea:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado del navegador */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añade una sombra sutil al enfocar */
+}
+
+/* Estilos específicos para textarea (si los usas) */
+.grid-filters textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilos para labels (opcional, para mejor alineación) */
+.grid-filters label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
